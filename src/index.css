@@ -1,13 +1,185 @@
+*,
+html,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display: border-box;
+  font-size: 20px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+.wiki-nav {
+  background-image: linear-gradient(
+    to right,
+    white,
+    rgba(240, 240, 240, 0.637)
+  );
+  position: absolute;
+  border-bottom: 1px solid rgb(30, 30, 155);
+  /* border-image: linear-gradient(to left, rgb(1, 196, 255), white) 1 100%; */
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.wiki-nav .nav-link {
+  position: relative;
+  float: right;
+  align-self: flex-end;
+  justify-self: flex-end;
+  width: 24.3%;
+  padding-right: 0;
+}
+.wiki-nav .nav-link a {
+  list-style: none !important;
+  font-size: 0.6rem;
+  margin-left: 3%;
+  text-decoration: none;
+  color: rgb(0, 0, 134);
+  justify-content: space-around;
+}
+.wiki-nav .nav-link a ion-icon {
+  font-size: 0.63rem;
+}
+.wiki-nav .search-input input {
+  padding: 0.7%;
+  border: 0;
+  position: relative;
+  border-style: none;
+  background-color: rgba(240, 240, 240, 0.39);
+
+  width: 88%;
+  font-size: 0.7rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: capitalize;
+}
+.nav-link-bottom {
+  position: relative;
+  right: 23%;
+  top: 10%;
+  width: 15%;
+  display: flex;
+  justify-self: flex-end;
+  align-items: flex-end;
+  background-image: linear-gradient(
+    to bottom,
+    white,
+    rgba(118, 206, 233, 0.281)
+  );
+  border: 1px solid rgba(118, 206, 233, 0.678);
+  border-top: 0;
+  overflow: hidden;
+}
+.nav-link-bottom a {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 0.66rem;
+  padding-left: 1%;
+  margin-left: 5%;
+
+  text-decoration: none;
+}
+.search-input:hover,
+.search-input:checked {
+  border: 1px solid blue;
+}
+.search-input {
+  border: 1px solid gray;
+  overflow: hidden;
+  position: absolute;
+  top: 61%;
+  right: 2%;
+  border-radius: 2px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.15% 0;
+
+  background-color: rgba(240, 240, 240, 0.555);
+}
+.search-input ion-icon {
+  font-size: 0.9rem;
+  display: inline-block;
+}
+.side-manu {
+  background-image: linear-gradient(white, rgb(240, 240, 240));
+  position: absolute;
+  width: 11%;
+  height: 100%;
+  border-right: 1px solid rgb(56, 56, 255);
+  border-image: linear-gradient(to top, rgb(1, 196, 255), white) 1 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  margin-bottom: 0;
+  /* padding-bottom: 90%; */
+}
+.side-manu img {
+  position: relative;
+  width: 82%;
+  margin-left: 5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: auto;
+  position: absolute;
+  margin-top: 5.5%;
+  margin-left: 11.2%;
+  padding: 1%;
+}
+h6 {
+  margin: 0.6% 0;
+}
+.content span {
+  font-size: 0.8rem;
+}
+.content a {
+  font-size: 00.7rem;
+  padding: 0 0.5%;
+}
+.side-nav-links {
+  position: absolute;
+  display: flex;
+  top: 25%;
+  width: 100%;
+  margin-left: 5%;
+  flex-direction: column;
+  /* align-content: flex-start; */
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.side-nav-links a {
+  font-size: 0.61rem;
+  margin: 1% 5%;
+  font-family: inherit;
+  padding: 0.5% 0;
+  color: rgb(28, 28, 167);
+  text-decoration: none;
+}
+.side-nav-links a:hover {
+  text-decoration: underline;
+}
+.side-nav-links p {
+  margin-top: 6%;
+  margin-left: 3%;
+  margin-bottom: 2%;
+  padding: 2% 0;
+  /* border-bottom: 1px solid rgb(0, 0, 146); */
+  font-size: 0.61rem;
+  color: #54595d;
+  background-image: linear-gradient(
+    to right,
+    rgba(200, 204, 209, 0) 0,
+    #c8ccd1 33%,
+    #c8ccd1 66%,
+    rgba(200, 204, 209, 0) 100%
+  );
+  background-position: center bottom;
+  background-repeat: no-repeat !important;
+  background-size: 100% 1px;
 }
